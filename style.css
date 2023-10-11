@@ -1,0 +1,243 @@
+    :root {
+        --background-color: rgb(90, 88, 88);
+        --logotext-color: rgb(156, 85, 85);
+        --accent-color: pink;
+        --bodybackground-color: rgb(41, 39, 39);
+        --icons-color: black;
+        --menutext-color: black;
+        --btntext-color: wheat;
+    }
+    html {
+        scroll-behavior: smooth; 
+    }
+    body {
+        margin: 0;
+        background-color: var(--bodybackground-color);
+    }
+    
+    /* Nav */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--background-color);
+        padding: 8px 12px; 
+    }
+
+    /* Logo */
+    .navbar__logo i {
+        color: var(--accent-color);
+        padding-left: 0;
+    }
+
+    .navbar__logo a {
+        text-decoration: none;
+        font-size: 20px;
+        color: var(--logotext-color);
+    }
+
+    /* Menu */
+    .navbar__menu{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .navbar__menu li {
+        padding: 20px 30px;
+    }
+
+    .navbar__menu a{
+        text-decoration: none;
+        color: var(--icons-color);
+        font-size: 20px;
+    }
+
+    .navbar__menu a:hover{
+        color: var(--logotext-color);
+        border-bottom: 2px solid white;
+    }
+
+    /* Icon */
+    .navbar__icons {
+        list-style: none;
+        display: flex;
+        color: var(--icons-color);
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .navbar__icons li {
+        padding: 8px 12px;
+        margin: 0;
+    }
+
+    /* MAIN Name */
+    .name__part {
+        display: flex;
+        background-color: black;
+        height: 100vh; 
+        justify-content: center; 
+        align-items: center;  
+    }
+
+    .name__part_one {
+        display: inline-block;
+        background-color: black;
+        height: 750px;
+        justify-content: center; 
+        align-items: center;  
+    }
+    .name__part_one h1 {
+        color: rgb(218, 196, 156);
+        padding: 0 1px;
+        font-size: 100px;
+    }
+    
+    .name__part_one  h1:hover{
+        text-shadow: 4px 4px rgb(160, 143, 110);
+    }
+    
+    /* Button */
+    .btn{
+        margin-top: 50px;
+        margin: 30px;
+        padding: 15px 45px;
+        text-transform: uppercase;
+        border: 2px solid #d8a12a;
+        border-radius: 15px;
+        text-decoration: none;
+        color: var(--btntext-color)
+     
+    }
+    .btn:hover{
+        color: white;
+        border-radius: 40px;
+        background-color:#a59572;;
+        border: 2px solid #a59572;;
+     
+    }
+
+    /* about */
+    .about__part {
+        display: block;
+        background-color: blue;
+        height: 100vh; 
+        justify-content: center; 
+        align-items: center;  
+    }
+
+
+    /* experience */
+    .exp__part {
+        display: block;
+        background-color: green;
+        height: 100vh; 
+        justify-content: center; 
+        align-items: center;  
+    }
+    .exp {
+        display: inline-block;
+        background-color: white;
+        height: 50px; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }
+
+
+    /* contact */
+    .contact__part {
+        display: block;
+        background-color:rgb(65, 62, 62);
+        height: 100vh; 
+        justify-content: center; 
+        align-items: center;  
+    }
+
+    .contact_div {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+
+    .hidden {
+        display: none;
+    }
+
+    #myDiv {
+        transition: transform 1s ease-in-out; /* Adjust duration and easing as needed */
+    }
+    
+    .move-left {
+        transform: translateX(-30%); /* Move the div to the left */
+    }
+    .move-left_line {
+        transform: translateX(-100%); /* Move the div to the left */
+    }
+    
+
+    @keyframes fadeInAnimation {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translate3d(100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+    .make_line {
+        position: relative;
+        animation: fadeInRight 2s;
+    }
+
+      .fade-in {
+        animation: fadeInAnimation 0.5s ease-in forwards;
+      }
+
+
+    #canvas {
+        background-color: transparent; 
+        /* opacity: 0.5; */
+      }
+
+    .line_div {
+        display: inline-block;
+        background-color: black;
+        height: 650px;
+        text-align:  left;
+
+      }
+
+    #line_child {
+        transition: transform 1s ease-in-out; /* Adjust duration and easing as needed */
+    }
+
+    .pages {
+        display: inline-block;
+        background-color: black;
+        height: 650px;
+        text-align:  center;
+    }
+    .pages h1 {
+        color: rgb(218, 196, 156);
+        padding: 0 1px;
+        font-size: 100px;
+    }
+    .github-icon {
+        width: 70px; /* Adjust the size as needed */
+        /* height: auto; */
+        cursor: pointer;
+      }
+    
+

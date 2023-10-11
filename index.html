@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css"/>
+    <script src="script.js" type="text/javascript"></script>
+    <title>Inho's Website</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <i class="fas fa-blog"></i>
+            <a href="http://127.0.0.1:5500/FULL_STACK_WEB_DECAL/proj1/index.html">Inho's</a>
+        </div>
+        <ul class="navbar__menu">
+            <li ><a href="#about" onclick="scrollToSection('about')">About</a></li>
+            <li ><a href="#experience" onclick="scrollToSection('experience')">Experience</a></li>
+            <li ><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+        <ul class="navbar__icons">
+            <li><i class="fab fa-google"></i></li>
+            <li><i class="fab fa-slack"></i></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN Name -->
+    <section class= "name__part">
+        <div class="name__part_one">
+            <div id="myDiv">     
+                <h1 id="name"></h1>
+                <a class="btn hidden" href="https://drive.google.com/file/d/1FDbrlalG2jUJbDfseikoRhJIJ1MTpmE1/view?usp=drive_link" target="_blank">Resume</a>
+                <a class="btn hidden" href="Resume" target="_blank">Fun</a>       
+            </div>
+        </div>    
+        <div class="line_div">
+            <div id="line_child">
+                <canvas id="canvas" class="hidden" width="200" height="500"> </canvas>
+            </div>
+        </div>
+        <div class="pages">
+            <h1 class="h1 hidden">tewrqasdcas</h1>
+            <!-- <h1 class="h1 hidden">ABOUT</h1> -->
+            <ul class="ul hidden">
+                <li>
+                <a href="https://github.com">
+                    <img src="github-mark.png" alt="GitHub Icon" class="github-icon" target="_blank">
+                  </a>
+                </li>
+                <li>
+                <a href="https://github.com">
+                    <img src="LI-In-Bug.png" alt="GitHub Icon" class="github-icon" target="_blank">
+                  </a>
+                </li>
+            </ul>
+        </div>
+    
+    </section>
+
+
+
+    
+
+    <!-- About -->
+    <section id="about" class="about__part">
+        <h1>about</h1>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience"  class="exp__part">
+        <div class="exp">
+            <h1>Still Working....</h1>
+        </div>
+     
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact" class="contact__part">
+        <div class="contact_div">
+            <h1>Contact</h1>
+        </div> 
+    </section>
+
+</body>
+</html>
