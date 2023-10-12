@@ -14,7 +14,7 @@ const TypeCharacterPart = () => {
     const nameContainer = document.getElementById("name");
     let index = 0;
     let lentext = 0;
-    let typingSpeed = 350;
+    let typingSpeed = 50;
     function typeNextCharacter() {
         if (index < text.length) {
             const charSpan = document.createElement('span');
@@ -55,15 +55,15 @@ const TypeCharacterPart = () => {
         });
         setTimeout(() => {
             moveDivLeft();
-        }, delay = 500);
+        }, delay += 500);
         setTimeout(() => {
             drawLine();
-        }, delay = 600);
-        // setTimeout(() => {
-        //     showUL();
-        // }, delay + 700);
+        }, delay += 500);    
 
-      
+        setTimeout(() => {
+            showImage_2();
+        }, delay += 400);    
+     
       
     }
 
@@ -78,7 +78,7 @@ const TypeCharacterPart = () => {
         // Unhide the canvas
         yPos += 1;
         // requestAnimationFrame(drawLine);
-        setInterval(drawLine, 20);
+        setInterval(drawLine, 30);
         
     }
 
@@ -86,10 +86,16 @@ const TypeCharacterPart = () => {
     function moveDivLeft() {
         const divToMove = document.getElementById('myDiv');
         const divToMove2 = document.getElementById('line_child');
-        const divToMove3 = document.getElementById('pages');
+        // const divToMove3 = document.getElementById('testdiv');
         divToMove.classList.toggle('move-left');
-        divToMove2.classList.toggle('move-left_line');
-        divToMove3.classList.toggle("move_left_line")
+        // divToMove2.classList.toggle('move-left_line');
+        // divToMove3.classList.toggle("move_left");
+        // if (isMoveLeftLine) {
+        //     divToMove2.classList.remove('hidden');
+        // } else {
+        //     divToMove2.classList.add('hidden');
+        // }
+  
     }
 
     function showUL() {
@@ -98,9 +104,28 @@ const TypeCharacterPart = () => {
         let delay = 0;
     };
 
+
+    function showImage_2() {
+        const img = document.querySelectorAll('.imageDiv.hidden');
+        let delay = 0;
+    
+        img.forEach(img => {
+            setTimeout(() => {
+                img.classList.remove('hidden');
+                img.classList.add('fade-in');  
+            }, delay);
+    
+            delay += 400;  
+        });
+
+      
+    }
+      
+
     window.addEventListener('load',  () => {
         typeNextCharacter();
         ButtonShow();
+    
 
     })
 };
