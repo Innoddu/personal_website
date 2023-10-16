@@ -146,6 +146,10 @@
         background-color: #1b1a1a;
         padding: 20px;
     }
+    .padd {
+        padding-top: 3rem!important;
+        padding-bottom: 3rem!important;
+    }
     .container {
         max-width: 800px;
         margin: 0 auto;
@@ -153,6 +157,9 @@
     .text_head {
         font-size: 3em;
         color:wheat;
+        text-decoration: underline;
+        text-decoration-color: rgb(240, 236, 236);
+        text-underline-position : under;
        
     }
     .no_margin {
@@ -168,6 +175,7 @@
     }
 
     .ul_contrainer {
+        display: inline-block;
         flex: 1;
         margin: 0;
         padding: 0;
@@ -193,27 +201,24 @@
       }
 
       .pic {
-          display: block;
-
+          display: inline-block;
           text-align: right;
           position: relative;
-          max-height: 100%; 
-    
-     
+          max-height: 100%;
+          padding-left: 20px; 
       }
 
       .pic img {
         max-width: 100%;
-        height: auto; /* Maintain aspect ratio */
-        width: 200px; /* Set the width as per your requirement */
+        height: auto; 
+        width: 250px; 
       }
+
     /* experience */
     .exp__part {
         display: block;
-        background-color: green;
-        height: 100vh; 
-        justify-content: center; 
-        align-items: center;  
+        background-color: #1b1a1a;
+        padding: 20px;
     }
     .exp {
         display: inline-block;
@@ -226,23 +231,72 @@
 
 
     /* contact */
-    .contact__part {
+    .contact {
         display: block;
-        background-color:rgb(65, 62, 62);
-        height: 100vh; 
-        justify-content: center; 
-        align-items: center;  
+        background-color: #1b1a1a;
+        padding: 20px;
     }
-
-    .contact_div {
+    .contact_text {
+        font-size: 3em;
+        color:wheat;
+        text-decoration: underline;
+        text-decoration-color: rgb(240, 236, 236);
+        text-underline-position : under;
+    }
+    .contact_box {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .box1 {
+        display: block;
+    }
+    .name_input {
+        padding: 0.4rem 1rem;
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        border-radius: 25px;
+        background: #12130F;
+        border: 1px solid;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+        border-color: #e74c3c;
+        color: #f7f7f7;
+    }
+    .textarea_input {
+        padding: 0.4rem 1rem;
+        width: 100%;
+        /* border: none; */
+        border-radius: 18px;
+        background: #12130F;
+        border: 1px solid;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+        border-color: #e74c3c;
+        color: #f7f7f7;
+    }
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: #999999;
+    }
+    .btn_send {
+        text-transform: uppercase;
+        margin: 30px;
+        padding: 15px 40px;
+        border: 2px solid #FDB515;
+        color: red;
+        background-color: blanchedalmond;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .btn_send:hover{
+        color: white;
+        border-radius: 40px;
+        background-color:#a59572;;
+        border: 2px solid #a59572;;
+     
     }
     
-
     .hidden {
         display: none;
     }
