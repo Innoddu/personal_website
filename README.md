@@ -1,13 +1,14 @@
 # Personal Website
 Astronaut image source:
+site: kr.freepik.com 
 
-                        kr.freepik.com 
+Authors: catalyststuff
 
-                        Authors: catalyststuff</a> Resource: Freepik
+Resource: Freepik
 
 Background image source: 
 
-                        https://unsplash.com/@gferla?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+site: https://unsplash.com/@gferla?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 
 
 ## Tools
