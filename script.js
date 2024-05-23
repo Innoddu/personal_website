@@ -7,7 +7,7 @@ const ScrollPart = () => {
         }
     };
 };
-    
+
 const TypeCharacterPart = () => {
     const text = "Welcome! I'm Inho Choi";
     let yPos = 0;
@@ -129,8 +129,13 @@ const TypeCharacterPart = () => {
 
     })
 };
-
-
+/** Navigation Menu Toggle **/
+// const NavigationToggle = () => {
+//     document.getElementById('hamburger').addEventListener('click', function() {
+//         var navbarMenu = document.getElementById('navbarMenu');
+//         navbarMenu.classList.toggle('active');
+//     });
+// };
 
 /**
  * We need to wait for the HTML file to fully load before running
@@ -153,11 +158,11 @@ const TypeCharacterPart = () => {
       console.error(e);
     }
 
-  
-    // try {
-    //   question3();
-    // } catch (e) {
-    //   console.error(e);
-    // }
+    // Add event listener for hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navbarMenu = document.getElementById('navbarMenu');
+    hamburger.addEventListener('click', () => {
+        navbarMenu.classList.toggle('active');
+    });
   });
   

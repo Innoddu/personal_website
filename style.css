@@ -23,6 +23,13 @@
         background-color: var(--background-color);
         padding: 8px 20px; 
     }
+    .navbar .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: rgb(34, 29, 29);
+        position: relative; /* Ensure it stays within the navbar */
+    }
 
     /* Logo */
     .navbar__logo i {
@@ -44,6 +51,13 @@
         padding-left: 8em;
         padding-right: 0px;
 
+
+    }
+    .navbar__menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .navbar__menu li {
@@ -84,7 +98,25 @@
     .navbar__icons i:hover {
         color: var(--logotext-color);
     }
-
+    /* Responsive Navbar */
+    @media (max-width: 700px) {
+        .navbar__menu {
+            
+            flex-direction: column;
+            align-items: center;
+            display: none;
+            width: 100%;
+        }
+        .navbar__menu.active {
+            display: flex;
+        }
+        .navbar__icons {
+            display: none;
+        }
+        .navbar .hamburger {
+            display: block;
+        }
+    }
     /* MAIN Name */
     .name__part {
         display: flex;
@@ -217,12 +249,12 @@
       }
 
     /* experience */
-    .exp__part {
+    .project__part {
         display: block;
         background-color: #1b1a1a;
         padding: 20px;
     }
-    .exp {
+    .pro {
         display: inline-block;
         background-color: white;
         height: 50px; 
