@@ -129,13 +129,6 @@ const TypeCharacterPart = () => {
 
     })
 };
-/** Navigation Menu Toggle **/
-// const NavigationToggle = () => {
-//     document.getElementById('hamburger').addEventListener('click', function() {
-//         var navbarMenu = document.getElementById('navbarMenu');
-//         navbarMenu.classList.toggle('active');
-//     });
-// };
 
 /**
  * We need to wait for the HTML file to fully load before running
